@@ -12,7 +12,7 @@ public class DatabaseConnection {
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver"); // Oracle JDBC driver
                 connection = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@localhost:1521:xe", "your_username", "your_password");
+                    "jdbc:oracle:thin:@localhost:1521:xe", "HR", "1234");
             } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
                 throw new SQLException("Error connecting to the database.");
